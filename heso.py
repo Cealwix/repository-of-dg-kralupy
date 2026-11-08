@@ -1,19 +1,17 @@
-x = input("zadejte pin")
-pin = 6245
-atemps = 3
-for i in range (atemps):
-  
-    atemps -=1
-    if attemps == 3:
-        break
-    if (x) == pin:
+attemps = 3
+x = input(f"zadejte pin (počet pokusů:{attemps}): ")
+pin = "6245"
+
+for i in range(1, attemps):
+    print(i)  
+    if (str(x)) == pin:
         print ("heslo přijato")
-    elif x != pin
+        break
+    elif x != pin:
         print ("špatné heslo")
-
-
-
-
-
+        x = input("zadejte pin: ")
+    if i == 2:
+        print(f"došel počet pokusů (max {attemps})")
+        break
 
 
